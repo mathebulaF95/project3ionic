@@ -1,3 +1,56 @@
-page-home {
+h1{
+    text-align: center;
+    color: tomato;
+}
+.math{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    h1{
+        display: block;
+        width: 45px;
+        text-align: center;
+     
+    }
+
+    button{
+        background: #a8a6a6;
+    }
+
+}
+.lus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button{
+        width: 35%;
+        background: #a8a6a6;
+    }
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    button{
+        width: 35%;
+        margin: 0 5px;
+        background: #a8a6a6;
+    }
+}
+
+ion-title{
+    background-color: tomato;
+}
+
+ion-label{
+    text-align: center;
+}
+
+#row{
+    text-align: center;
 }

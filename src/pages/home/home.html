@@ -1,14 +1,77 @@
+
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Just Java
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+
+  <ion-item>
+
+<ion-label floating>Name</ion-label>
+ <ion-input type = "text" [(ngModel)]="name"></ion-input>
+
+</ion-item>
+
+<h1>TOPPINGS</h1>
+
+<ion-item>
+  <ion-label>Whipped Cream</ion-label>
+  <ion-checkbox [(ngModel)]= "press" color="dark" ></ion-checkbox>
+  </ion-item>
+
+<ion-item>
+    <ion-label>Chocolate</ion-label>
+    <ion-checkbox [(ngModel)]= "pressing" color="dark"></ion-checkbox>
+  </ion-item>
+
+  <h1>QUANTITY</h1>
+
+
+      <div class="math">
+
+          <button ion-button (click)= "Click(0)">-</button>
+        
+          <h1>{{quantity}}</h1>
+        
+          <button ion-button (click)= "OnClick(1)">+</button>
+        </div>
+      <h1>Order Summary</h1>
+
+      <div *ngIf = "submit == true" id = "row">
+        <p>Name:</p>
+
+          {{name}}
+          <p *ngIf="press == true">
+            +Whipped Cream
+          </p>
+         <p *ngIf="pressing == true">
+              +Chocolate
+            </p>
+          Quantity: {{quantity}}<br><br>
+          Total:$ {{price}}<br><br>
+          Thank You
+      
+      </div>
+      
+      
+
+      <div class="lus">
+        <button ion-button block (click)= "Clicko()">ORDER</button><br><br>
+      </div>
+
+      <div class="btn">
+       
+        <button ion-button block (click)= "Clickr()">RESET</button>
+    
+            
+      </div>
+
+
+  </ion-content>
+  
+
+
